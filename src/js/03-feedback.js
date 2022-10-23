@@ -35,7 +35,8 @@ function checkLocalStorage() {
 form.addEventListener('submit', e => {
   e.preventDefault();
   const result = localStorage.getItem('feedback-form-state');
-  console.log(result);
+  const parsedResult = JSON.parse(result);
+  console.log(parsedResult);
   form.reset();
   localStorage.removeItem('feedback-form-state');
 });

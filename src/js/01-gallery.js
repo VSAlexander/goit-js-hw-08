@@ -24,6 +24,14 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
+// lightbox.on('error.simplelightbox', function (e) {
+//   console.log(e); // Some usefull information
+// });
+
+// lightbox.getLighboxData();
+
+// lightbox.open();
+
 // function handleClickOnImg(event) {
 //   event.preventDefault();
 //   if (!event.target.classList.contains('gallery__image')) {
@@ -33,6 +41,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
 //   lightbox.open();
 // }
 
-galleryEl.addEventListener('click', handleClickOnImg);
-
-lightbox.open();
+// galleryEl.addEventListener('click', handleClickOnImg);
